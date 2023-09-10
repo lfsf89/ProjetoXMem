@@ -1,0 +1,49 @@
+@media(max-width:1120px)
+{
+    .cabecalho .logo
+    {
+        max-width: 190px;
+    }
+
+    .selecao-de-perssonagens
+    {
+        flex-direction: column-reverse;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    .selecao-de-perssonagens .perssonagens
+    {
+        margin-top: 37px;
+    }
+
+    .selecao-de-perssonagens .perssonagens .titulo
+    {
+        font-size: 15px;
+    }
+
+    .selecao-de-perssonagens .lista-de-perssonagens
+    {
+        gap: 9px;
+    }
+    
+    .selecao-de-perssonagens .perssonagem img {
+        width: 80px;
+
+    }
+.perssonagem-selecionado .perssonagem-grande
+{
+    width: 350px;
+    height: 350px;
+}
+
+
+.perssonagem-selecionado .descricao-perssonagem
+{
+    width: 80%;
+    font-size: 16px;
+    margin:  20px auto;
+
+}
+
+}

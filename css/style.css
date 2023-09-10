@@ -1,0 +1,95 @@
+body {
+  font-family: "Oxanium", cursive;
+  background: #000;
+  color: #FFF;
+}
+
+body::before
+{
+  content:"";
+  background-image: url("../imagens/bg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+}
+
+.selecao-de-perssonagens {
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-height: calc(100vh - 150px);
+  justify-content: center;
+}
+
+.selecao-de-perssonagens .lista-de-perssonagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.selecao-de-perssonagens .perssonagens {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 585px;
+  gap: 25px;
+}
+
+.selecao-de-perssonagens .perssonagens .titulo {
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #47f4ff;
+  width: 100%;
+  text-align: center;
+}
+
+.lista-de-perssonagens .perssonagens .img {
+  width: 100%;
+  height: 100%;
+}
+
+.lista-de-perssonagens .perssonagem.selecionado {
+  box-shadow: 0px 0px 24px 5px #0271f7;
+}
+
+.perssonagem-selecionado
+{
+  text-align: center;
+  max-height: 530px;
+}
+
+.perssonagem-selecionado .perssonagem-grande
+{
+  width: 430px;
+  height: 430px;
+}
+
+.perssonagem-selecionado .nome-perssonagem
+{
+  border-bottom: 2px solid #47f4ff;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.perssonagem-selecionado .descricao-perssonagem
+{
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 20px;
+  width: 420px;
+}
